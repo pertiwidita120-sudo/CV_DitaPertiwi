@@ -343,6 +343,24 @@
         .resume-container {
           grid-template-columns: 1fr;
           gap: 30px;
+           @media (max-width: 850px) {
+          .resume-container {
+            grid-template-columns: 1fr; /* dari 2 kolom -> 1 kolom */
+            gap: 30px;
+          }
+
+          .full-width {
+            grid-column: span 1 !important;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .resume-container {
+            grid-template-columns: 1fr;
+            gap: 25px;
+          }
+        }
+
         }
 
         .full-width {
@@ -561,6 +579,7 @@
       .port-item p {
         padding: 15px 10px;
         margin: 0;
+        text-decoration: none;
         font-size: 1.1em;
         font-weight: 600;
         color: #2c3e50;
@@ -655,11 +674,11 @@
     <div class="left-panel" id="leftpanel">
       <div class="panel-content">
         <div class="profile-pic">
-          <img src="profile_pict.jpg" />
+          <img src="profile2.png" />
         </div>
 
         <h2>Dita Pertiwi</h2>
-        <h3>Rekayasa Perangkat Lunak</h3>
+        <h3>Web Developer</h3>
 
         <div class="social-icons">
           <a
@@ -691,7 +710,7 @@
           ></a>
         </div>
 
-        <a href="https://drive.google.com/file/d/1NsQO6xApndSZ9Js-GTQqd9_Yfy2mX8qT/view?usp=drivesdk" class="download-btn">Download CV</a>
+        <a href="https://drive.google.com/file/d/1nct67Udyi9xuSDsYBD0_vrGOauBxP4zX/view?usp=drivesdk" class="download-btn">Download CV</a>
       </div>
 
       <p class="footer">© 2025 Dita Pertiwi</p>
@@ -700,22 +719,19 @@
     <div class="content">
       <section id="home" class="active">
         <h2 class="home-title">Dita Pertiwi</h2>
-        <p class="home-sub">Rekayasa Perangkat Lunak</p>
+        <p class="home-sub">Web Developer</p>
       </section>
 
       <section id="about" class="about-section">
-        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <h2 class="section-title">Tentang Saya</h2>
 
         <div class="about-container">
           <div class="about-description">
             <p>
-              Saya merupakan siswa Rekayasa Perangkat Lunak dengan ketertarikan
-              kuat pada dunia pemrograman dan pengembangan aplikasi. Selama
-              studi, saya telah mempelajari dasar-dasar bahasa pemrograman,
-              pengembangan web, serta konsep basis data. Saya senang belajar hal
-              barudan bekerja secara kolaboratif dalam tim. Dengan semangat
-              untuk berkembang, saya siap berkontribusi dalam lingkungan kerja
-              maupun proyek PKL.
+              Saya adalah seorang Web Developer pemula dengan latar belakang pendidikan di bidang Rekayasa Perangkat Lunak. 
+              Saya memiliki dasar kemampuan dalam HTML dan CSS, serta sedang aktif mempelajari pemahaman mengenai bahasa pemrograman PHP 
+              untuk pengembangan website dinamis. Dunia pengembangan web menjadi ruang eksplorasi saya dalam mengasah logika, kreativitas, 
+              dan kemampuan membangun solusi digital yang relevan.
             </p>
 
             <div class="about-info">
@@ -739,84 +755,69 @@
         </div>
       </section>
 
-      <section id="resume" class="resume-section">
-        <h2 class="section-title">Resume</h2>
+        <section id="resume" class="resume-section">
+  <h2 class="section-title">Resume</h2>
 
-          <section class="resume-container">
-          <div class="resume-column">
-            <h3 class="sub-title">Education</h3>
+  <div class="resume-container">
+    <div class="resume-column">
+      <h3 class="sub-title">Education</h3>
 
-            <div class="timeline-item">
-              <span class="year">2023 – 2026</span>
-              <div>
-                <h4>SMKN Bantarkalong</h4>
-                <p>Rekayasa Perangkat Lunak</p>
-              </div>
-            </div>
+      <div class="timeline-item">
+        <span class="year">2023 – 2026</span>
+        <div>
+          <h4>SMKN Bantarkalong</h4>
+          <p>Rekayasa Perangkat Lunak</p>
+        </div>
+      </div>
 
-            <div class="timeline-item">
-              <span class="year">2020 – 2023</span>
-              <div>
-                <h4>SMPN 1 Cibalong</h4>
-              </div>
-            </div>
+      <div class="timeline-item">
+        <span class="year">2020 – 2023</span>
+        <div>
+          <h4>SMPN 1 Cibalong</h4>
+        </div>
+      </div>
+    </div>
 
-            <div class="timeline-item">
-              <span class="year">2014 – 2020</span>
-              <div>
-                <h4>SDN Batulawang</h4>
-              </div>
-            </div>
-          </div>
+    <div class="resume-column">
+      <h3 class="sub-title">Pengalaman Projek</h3>
 
-          <div class="resume-column">
-            <h3 class="sub-title">Pengalaman Projek</h3>
+      <div class="timeline-item">
+        <span class="year">Desember 2025</span>
+        <div>
+          <h4>PKL PT Inovindo Digital Media</h4>
+          <p>Projek aplikasi berbasis web dalam bentuk tim kerjasama.</p>
+        </div>
+      </div>
 
-            <div class="timeline-item">
-              <span class="year">Desember 2025</span>
-              <div>
-                <h4>PKL PT Inovindo Digital Media</h4>
-                <p>
-                  Membuat projek aplikasi berbasis web dalam bentuk tim
-                  kerjasama.
-                </p>
-              </div>
-            </div>
+      <div class="timeline-item">
+        <span class="year">November 2025</span>
+        <div>
+          <h4>Projek UKK</h4>
+          <p>Aplikasi kasir berbasis web & database.</p>
+        </div>
+      </div>
 
-            <div class="timeline-item">
-              <span class="year"
-                >November<br />
-                2025</span
-              >
-              <div>
-                <h4>Projek UKK</h4>
-                <p>
-                  Membuat aplikasi kasir sederhana berbasis web dan pengelolaan
-                  basis data.
-                </p>
-              </div>
-            </div>
+      <div class="timeline-item">
+        <span class="year">Juli 2025</span>
+        <div>
+          <h4>Projek Android</h4>
+          <p>Projek sekolah berbasis android serta database.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="timeline-item">
-              <span class="year">Juli 2025</span>
-              <div>
-                <h4>Projek</h4>
-                <p>
-                  Mengerjakan projek sekolah berbasis android serta pengelolaan
-                  basis data.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        </section>
+
       <section id="portfolio">
         <h2 class="section-title">Portfolio</h2>
         <div class="portfolio-grid">
-          <a href="https://drive.google.com/drive/folders/1sAvCR7eQBmHqMKocoSwcXJhSbzVZQW8t"><div class="port-item">
+          <a href="https://drive.google.com/drive/folders/1sAvCR7eQBmHqMKocoSwcXJhSbzVZQW8t">
+            <div class="port-item">
             <img src="tulistore.png">
-            <p>Aplikasi sederhana berbasis web</p>
-          </div></a> 
+            <p>Aplikasi sederhana berbasis web <br>2025</p>
+          </div>
+        </a> 
         </div>
       </section>
 
@@ -873,3 +874,4 @@
     </script>
   </body>
 </html>
+
